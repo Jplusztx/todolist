@@ -1,0 +1,108 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+	background-color: #77AF9C;
+	
+}
+header{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	top:0;
+	left: 0;
+	width: 12rem;
+	height: 0.55rem;
+	background-color: #379392;
+}
+header>.title{
+	line-height: 0.55rem;
+	height: 100%;
+	font-size: 0.25rem;
+	color: #FFFFFF;
+}
+header>.addInput{
+	background-color: aliceblue;
+	height: 100%;
+	width: 3.5rem;
+	display: flex;
+	padding: 0 0.2rem;
+	justify-content: space-between;
+	align-items: center;
+}
+header>input{
+	width: 3.5rem;
+	height: 75%;
+	padding: 0 0.08rem;
+	border:none;
+	font-size: 0.125rem;
+	font-weight: 800;
+	border-bottom: 1px dashed lightblue;
+	color: aliceblue;
+	outline: none;
+	letter-spacing: 2px;
+	background-color: #379392;
+}
+ input::placeholder{
+    color:white;
+}
+.main{
+	margin: 0 auto;
+	width: 7.5rem;
+	background-color: rgba(224,227,218,0.6);
+	height: 100vh;
+}
+.main .doing,.done{
+	padding: 0.3rem;
+}
+.main .title{
+	position: relative;
+	font-size: 0.325rem;
+}
+.main .title::after{
+	content: attr(data-count);
+	font-size: 0.275rem;
+	display: inline-block;
+	margin: 0 0.175rem;
+	background-color: #FFFFFF;
+	text-align: center;
+	line-height: 0.35rem;
+	width: 0.35rem;
+	height: 0.35rem;
+	border-radius: 0.175rem;
+}
+.eve{
+	font-size: 0.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	margin: 0.15rem 0;
+	padding:0.015rem 0.25rem;
+	border: 1px solid gainsboro;
+	border-radius: 0.08rem;
+	background-color:#5CAB7D;
+	border-left: 4px solid deepskyblue;
+}
+.eve>.del{
+	font-size: 0.12rem;
+	background-color:#DE6449 ;
+	text-align: center;
+	height: 0.3rem;
+	width: 0.5rem;
+	line-height: 0.3rem;
+	border-radius: 0.15rem;
+}
+.eve>input{
+	width: 0.3rem;
+	height:0.3rem
+}
+.doneList>.eve{
+	opacity: 0.4;
+}
+
+
